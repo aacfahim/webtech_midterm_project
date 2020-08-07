@@ -54,10 +54,26 @@
             <ul>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
-            </td>   
+			</td>  
+			<marquee> <strong>Welcome <?php echo $_COOKIE["uname"]; ?></strong> </marquee>
             <td>
-                <strong> Welcome <?php echo $_COOKIE["uname"]; ?></strong>
-            </td>
+				<div align="center">
+					<button type="submit" formaction="managejs.html">Manage Job Seeker</button>
+					<br><br>
+					<button type="submit" formaction="managejp.html">Manage Job Provider</button>
+					<br><br>
+					<button type="submit" formaction="bannedLog.html">Banned List</button>
+					<button type="submit" formaction="contentEdit.html">Edit Website Content</button>
+					<br><br>
+					<button type="submit" formaction="bonus.html">Add/Edit Increments</button>
+					<br><br><br>
+					<button type="submit" formaction="mail.html"><em>WEB MAIL</em></button>
+
+				</div>
+
+			</td>
+			
+			
         </tr>
 
 
