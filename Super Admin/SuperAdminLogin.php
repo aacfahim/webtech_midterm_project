@@ -35,7 +35,7 @@
 
             <hr/>
             <div align="center">
-            <!-- <input name="remember" type="checkbox">Remember Me -->
+            <!-- <input name="remember" type="checkbox" value = "remmember">Remember Me -->
             <br/><br/>
             <input type="submit" name="submit" value="Submit">     
             <br>

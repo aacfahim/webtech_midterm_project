@@ -36,9 +36,11 @@
                 setcookie('password', $password, time()+3600, '/');
                 setcookie('email', $email, time()+3600, '/');
 
+                $time = date("h:i:sa");
+
 
                 $file = fopen('SuperAdminUser.txt', 'a');
-                $SuperAdmin = $Name."|".$username."|".$password."|".$email."|".date("l jS \of F Y h:i:s A")."\n";
+                $SuperAdmin = $Name."|".$username."|".$password."|".$email."|".date("d/m/Y").",".$time."\n";
                 fwrite($file, $SuperAdmin);
                 fclose($file);
                

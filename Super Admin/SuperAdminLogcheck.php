@@ -23,6 +23,8 @@
 
 				$name = $row['Name'];
 				$email = $row['Email'];
+				$time = date("h:i:sa");
+
 
 				setcookie('STATUS', 'OK', time()+3600, '/');
 				setcookie('uname', $username, time()+3600, '/');
@@ -34,7 +36,7 @@
 
 				// storing login log inside text file
 				$file = fopen('SuperAdminUserLog.txt', 'a');
-                $SuperAdmin = $username."|".$password."|".date("l jS \of F Y h:i:s A")."\n";
+                $SuperAdmin = $username."|".$password."|".date("d/m/Y").",".$time."\n";
                 fwrite($file, $SuperAdmin);
 				fclose($file);
 

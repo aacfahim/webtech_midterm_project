@@ -55,7 +55,7 @@
                 <li><a href="logout.php">Logout</a></li>
             </ul>
 			</td>  
-			<marquee> <strong>Welcome <?php echo $_COOKIE["uname"]; ?></strong> </marquee>
+			<marquee> <strong>Welcome, <?php echo $_COOKIE["name"]; ?></strong> </marquee>
             <td>
 				<div align="center">
 					<button type="submit" formaction="managejs.html">Manage Job Seeker</button>
@@ -67,7 +67,7 @@
 					<br><br>
 					<button type="submit" formaction="bonus.html">Add/Edit Increments</button>
 					<br><br><br>
-					<button type="submit" formaction="mail.html"><em>WEB MAIL</em></button>
+					<button type="submit" formaction="search.html"><em>SEARCH</em></button>
 
 				</div>
 

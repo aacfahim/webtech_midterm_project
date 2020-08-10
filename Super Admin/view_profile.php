@@ -14,7 +14,7 @@
     <title>View Profile</title>
 </head>
 <body>
-    <table border = "1">
+    <table border = "1" align="center">
         <tr>
             <td colspan = "3" align="center">
                 <img width="50" height="40" src="Profile Picture">
