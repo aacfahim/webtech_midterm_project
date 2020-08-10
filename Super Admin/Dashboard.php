@@ -46,7 +46,7 @@
                 <li><a href="edit_profile.php">Edit Profile</a></li>
             </ul>
             <ul>
-                <li><a href="#">Chanage Profile Picture</a></li>
+                <li><a href="change_propic.php">Chanage Profile Picture</a></li>
             </ul>
             <ul>
                 <li><a href="change_password.html">Change Password</a></li>

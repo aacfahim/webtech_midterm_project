@@ -1,0 +1,30 @@
+<?php
+	session_start();
+
+	if(isset($_COOKIE['STATUS'])){
+		if($_COOKIE['STATUS'] == "OK"){
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Picture change</title>
+</head>
+<body>
+	<form method="POST" action="dp.php" enctype="multipart/form-data">
+		<fieldset>
+			Image: <input type="file" name="ProfilePicture">
+			<input type="submit" name="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>
+
+<?php
+}else{
+		header('location: SuperAdminLogin.php');
+		}
+	}else{
+		header('location: SuperAdminLogin.php?msg=Please Log in');
+	}
+?>

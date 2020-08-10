@@ -35,17 +35,16 @@
 
             <hr/>
             <div align="center">
-            <input name="remember" type="checkbox">Remember Me
+            <!-- <input name="remember" type="checkbox">Remember Me -->
             <br/><br/>
             <input type="submit" name="submit" value="Submit">     
             <br>
-            <a href="forgot_password.html">Forgot Password?</a>
             </div>
 
 
-            <div align = "right">
+            <div align="center">
                 <tr>
-					<td></td>
+					<td><br></td>
 					<td><a href = "SuperAdminRegistration.php">Register</a></td>
                 </tr>
                 

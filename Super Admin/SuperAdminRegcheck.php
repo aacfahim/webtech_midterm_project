@@ -8,10 +8,10 @@
     if(isset($_POST['submit']))
     {
 
-        if(!$connection)
-        {
-            echo "Could not connect to the server";
-        }
+        // if(!$connection)
+        // {
+        //     echo "Could not connect to the server";
+        // }
 
         $Name = $_POST['name'];
         $username = $_POST['uname'];
@@ -38,7 +38,7 @@
 
 
                 $file = fopen('SuperAdminUser.txt', 'a');
-                $SuperAdmin = $Name."|".$username."|".$password."|".$email."\n";
+                $SuperAdmin = $Name."|".$username."|".$password."|".$email."|".date("l jS \of F Y h:i:s A")."\n";
                 fwrite($file, $SuperAdmin);
                 fclose($file);
                
@@ -51,7 +51,7 @@
           
             }
     
-            header("refresh:2; url=SuperAdminLogin.html");
+            header("refresh:2; url=SuperAdminLogin.php");
     
          }
 
