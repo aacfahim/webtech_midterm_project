@@ -11,34 +11,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Profile</title>
+    <title>Edit Profile</title>
 </head>
 <body>
     <table border = "1" align="center">
         <tr>
             <td colspan = "3" align="center">
-                <img width="50" height="40" src="Profile Picture/Default.jpg">
+                <img width="50" height="40" src="Profile Picture">
             </td>
             <td rowspan = "5">
-                <button type="submit" formaction="edit_profile.php">Edit Profile</button>
+                <button type="submit" formaction="view_profile.html">SAVE</button>
             </td>
         </tr>
 
         <tr>
             <td><strong>Name</strong></td>
-            <td><?php echo $_COOKIE["name"];?></td>
+            <td><input type="text" name="name" value=""></td>
         </tr>
         <tr>
             <td><strong>Username</strong></td>
-            <td><?php echo $_COOKIE["uname"];?></td>
+            <td><input type="text" name="username" value=""></td>
         </tr>
         <tr>
             <td><strong>Email</strong></td>
-            <td><?php echo $_COOKIE["email"];?></td>
-        </tr>
-
-        <tr>
-            <td colspan = "3" align="center"><strong>YOU ARE THE SUPER ADMIN</strong></td>
+            <td><input type="text" name="email" value=""></td>
         </tr>
         
     </table>
