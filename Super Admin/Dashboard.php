@@ -65,7 +65,7 @@
 					<button type="submit" formaction="bannedLog.html">Banned List</button>
 					<button type="submit" formaction="contentEdit.html">Edit Website Content</button>
 					<br><br>
-					<button type="submit" formaction="bonus.html">Add/Edit Increments</button>
+					<!-- <button type="submit" formaction="bonus.html">Add/Edit Increments</button> -->
 					<br><br><br>
 					<button type="submit" formaction="search.html"><em>SEARCH</em></button>
 
